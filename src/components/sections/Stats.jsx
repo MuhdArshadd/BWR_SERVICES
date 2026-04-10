@@ -62,14 +62,14 @@ const Stats = () => {
   ];
 
   return (
-    <section className="pt-8 pb-16 bg-white overflow-hidden border-t border-b border-structure relative z-20">
+    <section className="pt-8 pb-4 bg-white overflow-hidden relative z-20">
       
       {/* --- Part 1: Trusted By (Marquee) --- */}
       <div className="max-w-7xl mx-auto px-4 mb-10 text-center">
         
         <div className="inline-block mb-6">
           {/* Enhanced Shadow: Pushed 4px to the right, darker opacity (0.3) */}
-          <h3 className="text-sm md:text-lg font-bold tracking-wide [text-shadow:_4px_2px_5px_rgba(0,0,0,0.3)]">
+          <h3 className="text-sm md:text-lg font-bold tracking-wide [text-shadow:_2px_2px_5px_rgba(0,0,0,0.3)]">
             - Trusted by Businesses & Homeowners -
           </h3>
         </div>
