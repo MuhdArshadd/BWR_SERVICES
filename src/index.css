@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* This replaces your old tailwind.config.js */
+@theme {
+  --color-structure: #E9E9E9;
+  --color-accent: #FF8040;
+  --color-brand: #0046FF;
+  --color-base-dark: #001BB7;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-base-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
