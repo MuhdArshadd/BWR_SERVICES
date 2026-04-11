@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { GeneralService, ChemicalWash, DiagnosisRepair, InstallationIcon } from '../Icons';
 
 const serviceData = [
-  { id: 1, title: 'General Service', desc: 'Routine cleaning for optimal airflow and cooling efficiency.', icon: <GeneralService className="w-8 h-8" /> },
-  { id: 2, title: 'Chemical Wash', desc: 'Deep cleaning to remove stubborn dirt, mold, and odors.', icon: <ChemicalWash className="w-8 h-8" /> },
-  { id: 3, title: 'Diagnosis & Repair', desc: 'Fixing water leaks, strange noises, and faulty boards.', icon: <DiagnosisRepair className="w-8 h-8" /> },
-  { id: 4, title: 'New Installation', desc: 'Professional mounting and secure piping for brand new units.', icon: <InstallationIcon className="w-8 h-8" /> },
+  { id: 1, title: 'General Service', desc: 'Routine cleaning for optimal airflow and cooling efficiency.', icon: <GeneralService className="w-full h-full" /> },
+  { id: 2, title: 'Chemical Wash', desc: 'Deep cleaning to remove stubborn dirt, mold, and odors.', icon: <ChemicalWash className="w-full h-full" /> },
+  { id: 3, title: 'Diagnosis & Repair', desc: 'Fixing water leaks, strange noises, and faulty boards.', icon: <DiagnosisRepair className="w-full h-full" /> },
+  { id: 4, title: 'New Installation', desc: 'Professional mounting and secure piping for brand new units.', icon: <InstallationIcon className="w-full h-full" /> },
 ];
 
 const Services = () => {
@@ -88,7 +88,7 @@ const Services = () => {
               <div key={service.id} className="flex items-start gap-4">
                 
                 {/* Icon Circle: Removed hover classes, added text-brand */}
-                <div className="flex-shrink-0 w-14 h-14 flex items-center justify-center text-brand">
+                <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center text-brand mt-1 block">
                   {service.icon}
                 </div>
                 
