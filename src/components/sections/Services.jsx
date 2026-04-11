@@ -11,7 +11,6 @@ const serviceData = [
 const Services = () => {
   const [currentImage, setCurrentImage] = useState(0);
   
-  // Array of your 3 images (ensure these exist in your public folder)
   const images = [
     '/services1.png',
     '/services2.png',
@@ -19,13 +18,12 @@ const Services = () => {
     '/services4.png',
   ];
 
-  // Auto-slide effect: Changes image every 4 seconds
+  // Auto-slide effect
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
     }, 4000); 
 
-    // Cleanup timer on unmount
     return () => clearInterval(timer);
   }, [images.length]);
 
@@ -34,7 +32,6 @@ const Services = () => {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
 
         {/* --- Left Side: Auto-Sliding Images --- */}
-        {/* hidden lg:block ensures it vanishes completely on mobile and iPad */}
         <div className="hidden lg:block w-full lg:w-1/2 relative z-10">
           
           {/* Stylish Background Elements */}
@@ -48,13 +45,11 @@ const Services = () => {
                 key={idx}
                 src={img}
                 alt={`Aircon Service Work ${idx + 1}`}
-                // The transition handles the smooth fade. scale-105 to scale-100 gives a slight zoom-out effect.
                 className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${
                   idx === currentImage ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                 }`}
               />
             ))}
-            {/* Soft dark gradient at the bottom so the image doesn't look flat */}
             <div className="absolute inset-0 bg-gradient-to-t from-base-dark/40 via-transparent to-transparent"></div>
           </div>
 
@@ -69,8 +64,6 @@ const Services = () => {
 
         {/* --- Right Side: Content & Services (Visible on all devices) --- */}
         <div className="w-full lg:w-1/2">
-          
-          {/* Reference Image Layout: Eyebrow, Title, Paragraph */}
           <p className="text-accent font-extrabold tracking-widest uppercase mb-4 text-lg md:text-xl">
             Our Services
           </p>
@@ -80,19 +73,12 @@ const Services = () => {
           <p className="text-base-dark/80 text-lg mb-10 leading-relaxed max-w-2xl">
             At BWR Services, our mission is to provide fast, reliable, and high-quality air conditioning maintenance tailored to meet the unique needs of your home and business. We strive to be your trusted partner in keeping your environment comfortable.
           </p>
-
-          {/* 2x2 Grid Layout for Services */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
             {serviceData.map((service) => (
-              // Removed 'group' class here
-              <div key={service.id} className="flex items-start gap-4">
-                
-                {/* Icon Circle: Removed hover classes, added text-brand */}
+              <div key={service.id} className="flex items-start gap-4">      
                 <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center text-brand mt-1 block">
                   {service.icon}
                 </div>
-                
-                {/* Service Text: Removed group-hover from the heading */}
                 <div>
                   <h4 className="text-xl font-bold text-base-dark mb-2">
                     {service.title}
@@ -105,7 +91,6 @@ const Services = () => {
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </section>

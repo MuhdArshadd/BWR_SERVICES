@@ -8,7 +8,7 @@ import Services from './components/sections/Services';
 import Pricing from './components/sections/Pricing';
 import BookingFlow from './components/sections/BookingFlow';
 import Reviews from './components/sections/Reviews';
-import Coverage from './components/sections/Coverage'; // <-- Import it here
+import Coverage from './components/sections/Coverage';
 
 function App() {
   return (

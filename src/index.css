@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* This replaces your old tailwind.config.js */
 @theme {
   --color-structure: #E9E9E9;
   --color-accent: #FF8040;

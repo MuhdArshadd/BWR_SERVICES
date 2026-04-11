@@ -30,13 +30,11 @@ const Pricing = () => {
               </div>
               
               {/* Right Side: The White Price Badge */}
-              {/* Widened to md:w-64 lg:w-72 to comfortably fit the large "Custom Quote" text */}
               <div className="flex flex-col items-center justify-center w-full md:w-64 lg:w-72 bg-white border-2 border-structure/30 rounded-xl p-4 shadow-sm flex-shrink-0">
                 <span className="text-xs font-bold text-base-dark/50 uppercase tracking-widest mb-1">
                   Starts From
                 </span>
                 
-                {/* Text is now universally large across all pricing tiers */}
                 <div className="font-black text-accent text-center leading-tight text-3xl lg:text-4xl">
                   {tier.price}
                 </div>

@@ -4,7 +4,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
 
-  // Scroll Spy Logic
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['services', 'pricing', 'reviews', 'contact'];
@@ -14,16 +13,12 @@ const Navbar = () => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          // Highlight the section if it is in the upper third of the viewport
-          // and the bottom of the section hasn't completely scrolled past the navbar
           if (rect.top <= window.innerHeight / 3 && rect.bottom >= 100) {
             current = section;
             break;
           }
         }
       }
-
-      // Clear the active state if the user scrolls all the way back to the absolute top
       if (window.scrollY < 50) {
         current = '';
       }
@@ -31,20 +26,16 @@ const Navbar = () => {
       setActiveSection(current);
     };
 
-    // Listen for scroll events
     window.addEventListener('scroll', handleScroll);
-    
-    // Trigger it once on mount to catch the initial load position
+  
     handleScroll();
 
-    // Cleanup the listener when the component unmounts
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Helper function to handle link clicks smoothly
   const handleNavClick = (section) => {
     setActiveSection(section);
-    setIsOpen(false); // Closes mobile menu if it's open
+    setIsOpen(false); 
   };
 
   return (
@@ -67,7 +58,6 @@ const Navbar = () => {
           
           {/* Middle: Desktop Pill Menu */}
           <div className="hidden md:flex flex-1 justify-center">
-            {/* Reduced container padding (p-1.5) and spacing (space-x-1) so the inner pills fit snugly */}
             <div className="bg-structure/40 border border-structure/80 p-1.5 rounded-full flex space-x-1 shadow-sm">
               <a 
                 href="#services" 

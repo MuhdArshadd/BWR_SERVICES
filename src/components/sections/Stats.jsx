@@ -68,7 +68,6 @@ const Stats = () => {
       <div className="max-w-7xl mx-auto px-4 mb-10 text-center">
         
         <div className="inline-block mb-6">
-          {/* Enhanced Shadow: Pushed 4px to the right, darker opacity (0.3) */}
           <h3 className="text-sm md:text-lg font-bold tracking-wide [text-shadow:_2px_2px_5px_rgba(0,0,0,0.1)]">
             - Trusted by Businesses & Homeowners -
           </h3>
@@ -96,11 +95,9 @@ const Stats = () => {
       <div ref={statsRef} className="max-w-7xl mx-auto px-2 md:px-4 grid grid-cols-3 gap-2 md:gap-12 text-center">
         {stats.map((stat, idx) => (
           <div key={idx} className="p-2 md:p-6">
-            {/* Enhanced Shadow: Pushed massive 8px to the right, increased blue opacity (0.4) */}
             <div className="text-3xl sm:text-4xl md:text-7xl font-black text-brand mb-1 md:mb-4 tabular-nums [text-shadow:_2px_2px_4px_rgba(0,70,255,0.15)]">
                 <AnimatedCounter endValue={stat.target} start={isVisible} />+
             </div>
-            {/* Enhanced Shadow: Pushed 3px to the right */}
             <div className="text-[10px] sm:text-xs md:text-xl font-bold text-base-dark/80 tracking-wider md:tracking-wide uppercase leading-tight [text-shadow:_3px_1px_4px_rgba(0,0,0,0.25)]">
               {stat.label}
             </div>

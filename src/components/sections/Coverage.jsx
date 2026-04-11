@@ -44,10 +44,6 @@ const Coverage = () => {
         </div>
 
         {/* Right Side: Map & Glowing Points */}
-        {/* MODIFIED: 
-          'hidden' makes it vanish by default (mobile/tablet).
-          'lg:flex' makes it reappear once the screen is 1024px or wider.
-        */}
         <div className="hidden lg:flex w-full lg:w-1/2 relative min-h-[400px] items-center justify-center bg-white rounded-3xl border border-structure p-8 shadow-sm">
           <div className="w-full aspect-video bg-structure/50 rounded-xl flex items-center justify-center text-base-dark/40 font-bold relative overflow-hidden">
             [Malaysia Map Image Placeholder]
