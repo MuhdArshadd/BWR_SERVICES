@@ -21,7 +21,7 @@ const Coverage = () => {
           <h2 className="text-4xl md:text-5xl font-black text-base-dark mb-6">
             Areas We Cover
           </h2>
-          <div className="w-20 h-1.5 bg-brand rounded-full mb-8"></div>
+          <div className="w-20 h-1.5 bg-accent rounded-full mb-8"></div>
           <p className="text-lg text-base-dark/80 mb-8 leading-relaxed">
             As a dedicated mobile service team, we bring professional air conditioning solutions directly to your doorstep. Our primary service areas are concentrated around the major metropolitan regions.
           </p>

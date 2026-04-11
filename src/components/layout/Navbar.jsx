@@ -2,8 +2,44 @@ import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // Track the active section (default to 'services' or leave empty)
-  const [activeSection, setActiveSection] = useState('services');
+  const [activeSection, setActiveSection] = useState('');
+
+  // Scroll Spy Logic
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['services', 'pricing', 'reviews', 'contact'];
+      let current = '';
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          // Highlight the section if it is in the upper third of the viewport
+          // and the bottom of the section hasn't completely scrolled past the navbar
+          if (rect.top <= window.innerHeight / 3 && rect.bottom >= 100) {
+            current = section;
+            break;
+          }
+        }
+      }
+
+      // Clear the active state if the user scrolls all the way back to the absolute top
+      if (window.scrollY < 50) {
+        current = '';
+      }
+
+      setActiveSection(current);
+    };
+
+    // Listen for scroll events
+    window.addEventListener('scroll', handleScroll);
+    
+    // Trigger it once on mount to catch the initial load position
+    handleScroll();
+
+    // Cleanup the listener when the component unmounts
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Helper function to handle link clicks smoothly
   const handleNavClick = (section) => {
@@ -18,7 +54,7 @@ const Navbar = () => {
           
           {/* Left: Company Image Logo */}
           <div className="flex-shrink-0 flex items-center md:w-48">
-            <a href="#" onClick={() => setActiveSection('')}>
+            <a href="#" onClick={() => handleNavClick('')}>
               <img 
                 src="/logo.png" 
                 alt="BWR Services Logo" 

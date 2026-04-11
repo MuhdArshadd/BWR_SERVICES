@@ -60,7 +60,7 @@ const Reviews = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-base-dark mb-4">What Our Customers Say</h2>
-          <div className="w-24 h-1.5 bg-brand mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-1.5 bg-accent mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-base-dark/70 max-w-2xl mx-auto">
             Don't just take our word for it. Here is what homeowners and businesses across the region have to say about our service.
           </p>

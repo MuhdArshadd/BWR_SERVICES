@@ -69,7 +69,7 @@ const Stats = () => {
         
         <div className="inline-block mb-6">
           {/* Enhanced Shadow: Pushed 4px to the right, darker opacity (0.3) */}
-          <h3 className="text-sm md:text-lg font-bold tracking-wide [text-shadow:_2px_2px_5px_rgba(0,0,0,0.3)]">
+          <h3 className="text-sm md:text-lg font-bold tracking-wide [text-shadow:_2px_2px_5px_rgba(0,0,0,0.1)]">
             - Trusted by Businesses & Homeowners -
           </h3>
         </div>

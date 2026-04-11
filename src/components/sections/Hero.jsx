@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaWhatsapp } from "react-icons/fa"; // Importing your icon
+import { WhatsAppIcon } from "../Icons";
 
 const Hero = () => {
   return (
@@ -45,7 +45,7 @@ const Hero = () => {
               href="https://wa.me/60123456789" 
               className="w-full sm:w-auto px-8 py-4 bg-[#25D366] text-white text-lg font-bold rounded-full shadow-lg hover:bg-[#20bd5a] transition-all duration-300 flex items-center justify-center gap-3"
             >
-              <FaWhatsapp className="text-2xl" />
+              <WhatsAppIcon className="text-2xl" />
               Book via WhatsApp
             </a>
             

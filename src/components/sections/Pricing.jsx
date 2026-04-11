@@ -14,7 +14,8 @@ const Pricing = () => {
         {/* Section Header */}
         <div className="text-center mb-10">
           <h2 className="text-4xl font-black text-base-dark mb-4">Transparent Pricing</h2>
-          <p className="text-lg text-accent font-semibold">No hidden fees. Honest work.</p>
+          <p className="text-lg text-accent font-semibold mb-4">No hidden fees. Honest work.</p>
+          <div className="w-24 h-1.5 bg-accent mx-auto rounded-full"></div>
         </div>
 
         {/* Pricing Cards */}
