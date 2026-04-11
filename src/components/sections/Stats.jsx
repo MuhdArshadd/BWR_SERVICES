@@ -53,7 +53,7 @@ const Stats = () => {
 
   const stats = [
     { target: 100, label: 'Residential' },
-    { target: 500, label: 'Units Serviced' },
+    { target: 200, label: 'Units Serviced' },
     { target: 3, label: 'Area Covered' },
   ];
 

@@ -17,6 +17,7 @@ const Coverage = () => {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         
         {/* Left Side: Text & List */}
+        {/* On screens < 1024px, this will take full width (w-full) */}
         <div className="w-full lg:w-1/2">
           <h2 className="text-4xl md:text-5xl font-black text-base-dark mb-6">
             Areas We Cover
@@ -43,12 +44,14 @@ const Coverage = () => {
         </div>
 
         {/* Right Side: Map & Glowing Points */}
-        <div className="w-full lg:w-1/2 relative min-h-[400px] flex items-center justify-center bg-white rounded-3xl border border-structure p-8 shadow-sm">
-          {/* Map Image Placeholder (Replace src with actual map image path) */}
+        {/* MODIFIED: 
+          'hidden' makes it vanish by default (mobile/tablet).
+          'lg:flex' makes it reappear once the screen is 1024px or wider.
+        */}
+        <div className="hidden lg:flex w-full lg:w-1/2 relative min-h-[400px] items-center justify-center bg-white rounded-3xl border border-structure p-8 shadow-sm">
           <div className="w-full aspect-video bg-structure/50 rounded-xl flex items-center justify-center text-base-dark/40 font-bold relative overflow-hidden">
             [Malaysia Map Image Placeholder]
             
-            {/* Glowing Map Points (Simulated locations for Klang Valley, Penang, Johor) */}
             <div className="absolute top-[40%] left-[25%]">
               <div className="relative flex items-center justify-center">
                 <div className="animate-ping absolute inline-flex h-8 w-8 rounded-full bg-accent opacity-60"></div>
