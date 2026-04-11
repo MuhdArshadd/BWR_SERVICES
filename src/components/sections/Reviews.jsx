@@ -37,9 +37,14 @@ const Reviews = () => {
           .animate-scroll-vertical {
             animation: scrollDown 30s linear infinite;
           }
-          .animate-scroll-vertical:hover {
-            animation-play-state: paused;
+          
+          /* ENHANCEMENT: Only pause on hover for devices that actually have a mouse cursor */
+          @media (hover: hover) {
+            .animate-scroll-vertical:hover {
+              animation-play-state: paused;
+            }
           }
+
           .img-fade {
             transition: opacity 0.8s ease-in-out;
           }
@@ -72,7 +77,6 @@ const Reviews = () => {
       )}
 
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-black text-base-dark mb-4 tracking-tight">
             Real Results, Real Reviews
@@ -84,7 +88,6 @@ const Reviews = () => {
         </div>
 
         {/* --- STYLISH GREY CONTAINER --- */}
-        {/* Switched bg-base-dark/80 to bg-slate-100 for a clean grey look */}
         <div className="bg-slate-100 p-4 md:p-8 rounded-[2.5rem] shadow-xl border border-slate-200">
           <div className="flex flex-col lg:flex-row gap-6 md:gap-8 items-stretch">
             
@@ -124,7 +127,6 @@ const Reviews = () => {
                 ))}
               </div>
               
-              {/* Overlays fading into the slate-100 background */}
               <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-slate-100 to-transparent z-10 pointer-events-none"></div>
               <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-slate-100 to-transparent z-10 pointer-events-none"></div>
             </div>
