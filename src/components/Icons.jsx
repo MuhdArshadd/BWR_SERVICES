@@ -28,7 +28,7 @@ export const DiagnosisRepair = (props) => (
     viewBox="0 0 32 32"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
     {...props}
   >
     <g id="icomoon-ignore"></g>
@@ -54,12 +54,12 @@ export const InstallationIcon = (props) => (
   <svg
     fill="#000000"
     viewBox="0 0 100 100"
-    enable-background="new 0 0 100 100"
+    enableBackground="new 0 0 100 100"
     id="Layer_1"
     version="1.1"
-    xml:space="preserve"
+    xmlSpace="preserve"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
     {...props}
   >
     <g>
@@ -109,9 +109,9 @@ export const TechnicianIcon = (props) => (
     version="1.1"
     id="Capa_1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 384.981 384.981"
-    xml:space="preserve"
+    xmlSpace="preserve"
     {...props}
   >
     <g>

@@ -53,7 +53,7 @@ const Coverage = () => {
         </div>
 
         {/* Right Side: Map & Glowing Points */}
-        <div className="hidden lg:flex w-full lg:w-1/2 relative min-h-[500px] items-center justify-center bg-slate-100 rounded-[2.5rem] border border-slate-200 p-8 shadow-inner">
+        <div className="hidden lg:flex w-full lg:w-1/2 relative min-h-[578px] items-center justify-center bg-slate-100 rounded-[2.5rem] border border-slate-200 p-8 shadow-inner">
           <div className="w-full aspect-video bg-slate-200 rounded-3xl flex items-center justify-center text-slate-400 font-black tracking-widest uppercase text-xs relative overflow-hidden shadow-lg border-4 border-white">
             [Malaysia Map Image Placeholder]
             
