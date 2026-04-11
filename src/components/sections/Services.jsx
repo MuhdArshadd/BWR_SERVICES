@@ -44,7 +44,7 @@ const Services = () => {
               <img
                 key={idx}
                 src={img}
-                alt={`Aircon Service Work ${idx + 1}`}
+                alt={`Aircond Service Work ${idx + 1}`}
                 className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${
                   idx === currentImage ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                 }`}

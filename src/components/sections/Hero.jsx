@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="absolute inset-0 lg:left-[40%] w-full lg:w-[60%] h-full">
         <img
           src="/hero.gif"
-          alt="Professional Aircon Servicing"
+          alt="Professional Aircond Servicing"
           className="w-full h-full object-cover brightness-[0.65]"
         />
       </div>
@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
-            Reliable Aircon Servicing at Your Doorstep
+            Reliable Air Conditioner Servicing at Your Doorstep
           </h1>
           <p className="text-lg md:text-2xl text-white/80 mb-10 font-medium max-w-lg mx-auto lg:mx-0">
             Professional cooling solutions for residential and commercial

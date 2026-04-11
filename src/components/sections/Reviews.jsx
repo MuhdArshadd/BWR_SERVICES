@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Reviews = () => {
   const reviews = [
-    { id: 1, name: "Ahmad T.", type: "Homeowner", quote: "Very fast and polite! Fixed my leaking aircon in 30 minutes.", image: "/proof1.png" },
+    { id: 1, name: "Ahmad T.", type: "Homeowner", quote: "Very fast and polite! Fixed my leaking aircond in 30 minutes.", image: "/proof1.png" },
     { id: 2, name: "Sarah L.", type: "Homeowner", quote: "Professional service. The chemical wash made my AC feel brand new.", image: "/proof2.png" },
     { id: 3, name: "Michael C.", type: "Office Manager", quote: "Transparent pricing. Great B2B partner for our office.", image: "/proof3.png" },
     { id: 4, name: "Nurul H.", type: "Homeowner", quote: "Booking via WhatsApp was so easy. Technician arrived on time.", image: "/proof4.png" },

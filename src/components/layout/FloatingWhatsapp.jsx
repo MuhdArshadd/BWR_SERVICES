@@ -1,7 +1,7 @@
 import React from "react";
 
 const FloatingWhatsApp = () => {
-  const message = "Hi BWR Services! I'd like to book an aircon service. Can you help me?";
+  const message = "Hi BWR Services! I'd like to book an aircond service. Can you help me?";
 
   return (
     <a
