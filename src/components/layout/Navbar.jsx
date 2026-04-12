@@ -55,11 +55,11 @@ const Navbar = () => {
           
           {/* Middle: Desktop Pill Menu */}
           <div className="hidden md:flex flex-1 justify-center px-4">
-            <div className="bg-structure/40 border border-structure/80 p-1.5 rounded-full flex space-x-1 shadow-sm">
+            <div className="bg-structure/40 border border-structure/80 p-1.5 rounded-full flex space-x-1 shadow-sm h-[44px]">
               <a 
                 href="#services" 
                 onClick={() => handleNavClick('services')}
-                className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
+                className={`px-6 flex items-center rounded-full font-semibold transition-all duration-300 ${
                   activeSection === 'services' 
                     ? 'bg-brand text-white shadow-md' 
                     : 'text-base-dark hover:text-brand hover:bg-structure/50'
@@ -70,7 +70,7 @@ const Navbar = () => {
               <a 
                 href="#pricing" 
                 onClick={() => handleNavClick('pricing')}
-                className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
+                className={`px-6 flex items-center rounded-full font-semibold transition-all duration-300 ${
                   activeSection === 'pricing' 
                     ? 'bg-brand text-white shadow-md' 
                     : 'text-base-dark hover:text-brand hover:bg-structure/50'
@@ -81,7 +81,7 @@ const Navbar = () => {
               <a 
                 href="#reviews" 
                 onClick={() => handleNavClick('reviews')}
-                className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
+                className={`px-6 flex items-center rounded-full font-semibold transition-all duration-300 ${
                   activeSection === 'reviews' 
                     ? 'bg-brand text-white shadow-md' 
                     : 'text-base-dark hover:text-brand hover:bg-structure/50'
@@ -95,21 +95,21 @@ const Navbar = () => {
           {/* Right: Flag, Contact Button & Mobile Toggle */}
           <div className="flex items-center justify-end gap-3 md:gap-4 min-w-fit">
             
-            {/* The Malaysia Flag (Visible on all dimensions) */}
-            <div className="flex items-center justify-center p-1.5 bg-white rounded-md shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-slate-200">
+            {/* The Malaysia Flag - Adjusted to match heights */}
+            <div className="flex items-center justify-center px-3 bg-white rounded-md shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-slate-200 h-[40px] md:h-[44px]">
               <img 
                 src="/MalaysiaFlag.png" 
                 alt="Malaysia" 
-                className="w-7 h-auto object-cover rounded-[2px]" 
+                className="w-7 md:w-8 h-auto object-cover rounded-[2px]" 
               />
             </div>
 
             {/* Desktop Contact Us Button */}
-            <div className="hidden md:block">
+            <div className="hidden md:flex items-center">
               <a 
                 href="#contact" 
                 onClick={() => handleNavClick('contact')}
-                className="whitespace-nowrap px-6 py-3 bg-brand text-white font-bold rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
+                className="whitespace-nowrap px-6 flex items-center bg-brand text-white font-bold rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300 h-[44px]"
               >
                 Contact Us
               </a>
@@ -117,7 +117,7 @@ const Navbar = () => {
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center">
-              <button onClick={() => setIsOpen(!isOpen)} className="text-base-dark hover:text-brand focus:outline-none p-2 bg-structure/30 rounded-lg transition-colors">
+              <button onClick={() => setIsOpen(!isOpen)} className="text-base-dark hover:text-brand focus:outline-none p-2 bg-structure/30 rounded-lg transition-colors h-[40px] flex items-center justify-center">
                 <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
                 </svg>
