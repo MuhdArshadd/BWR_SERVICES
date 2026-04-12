@@ -22,14 +22,11 @@ const Navbar = () => {
       if (window.scrollY < 50) {
         current = '';
       }
-
       setActiveSection(current);
     };
 
     window.addEventListener('scroll', handleScroll);
-  
     handleScroll();
-
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -44,7 +41,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-24">
           
           {/* Left: Company Image Logo */}
-          <div className="flex-shrink-0 flex items-center md:w-48">
+          <div className="flex-shrink-0 flex items-center min-w-fit">
             <a href="#" onClick={() => handleNavClick('')}>
               <img 
                 src="/logo.png" 
@@ -57,7 +54,7 @@ const Navbar = () => {
           </div>
           
           {/* Middle: Desktop Pill Menu */}
-          <div className="hidden md:flex flex-1 justify-center">
+          <div className="hidden md:flex flex-1 justify-center px-4">
             <div className="bg-structure/40 border border-structure/80 p-1.5 rounded-full flex space-x-1 shadow-sm">
               <a 
                 href="#services" 
@@ -95,23 +92,34 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Right: Contact Button & Mobile Toggle */}
-          <div className="flex items-center md:w-48 justify-end">
+          {/* Right: Flag, Contact Button & Mobile Toggle */}
+          <div className="flex items-center justify-end gap-3 md:gap-4 min-w-fit">
+            
+            {/* The Malaysia Flag (Visible on all dimensions) */}
+            <div className="flex items-center justify-center p-1.5 bg-white rounded-md shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-slate-200">
+              <img 
+                src="/MalaysiaFlag.png" 
+                alt="Malaysia" 
+                className="w-7 h-auto object-cover rounded-[2px]" 
+              />
+            </div>
+
+            {/* Desktop Contact Us Button */}
             <div className="hidden md:block">
               <a 
                 href="#contact" 
                 onClick={() => handleNavClick('contact')}
-                className="px-6 py-3 bg-brand text-white font-bold rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
+                className="whitespace-nowrap px-6 py-3 bg-brand text-white font-bold rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
               >
                 Contact Us
               </a>
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center ml-4">
-              <button onClick={() => setIsOpen(!isOpen)} className="text-base-dark hover:text-brand focus:outline-none p-2 bg-structure/30 rounded-lg">
-                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+            <div className="md:hidden flex items-center">
+              <button onClick={() => setIsOpen(!isOpen)} className="text-base-dark hover:text-brand focus:outline-none p-2 bg-structure/30 rounded-lg transition-colors">
+                <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
                 </svg>
               </button>
             </div>

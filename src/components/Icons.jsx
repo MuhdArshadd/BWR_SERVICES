@@ -1,9 +1,11 @@
 import React from "react";
 
 // --------------- ICON ------------------
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaTiktok, FaInstagramSquare } from "react-icons/fa";
 
 export const WhatsAppIcon = (props) => <FaWhatsapp {...props} />;
+export const TikTokIcon = (props) => <FaTiktok {...props} />;
+export const InstagramIcon = (props) => <FaInstagramSquare {...props} />;
 
 // ---------------------------------------
 
