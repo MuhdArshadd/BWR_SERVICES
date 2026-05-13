@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="md:col-span-2">
           <span className="font-black text-2xl text-white tracking-tighter mb-4 block">BWR SERVICES</span>
           <p className="text-structure/80 mb-6 max-w-sm">
-            Professional, reliable, and transparent air conditioner services across the Klang Valley.
+            Professional, reliable, and transparent air conditioner services provider.
           </p>
           
           <p className="text-xs font-bold uppercase tracking-widest text-structure/50 mb-3">

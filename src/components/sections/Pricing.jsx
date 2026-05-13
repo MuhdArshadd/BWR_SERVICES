@@ -3,7 +3,7 @@ import React from 'react';
 const Pricing = () => {
   const tiers = [
     { title: 'General Servicing', price: 'RM 80', desc: 'Standard cleaning for 1.0HP - 1.5HP units.' },
-    { title: 'Chemical Wash', price: 'RM 150', desc: 'Deep chemical cleaning for heavily soiled units.' },
+    { title: 'Chemical Service', price: 'RM 150', desc: 'Deep chemical cleaning for heavily soiled units.' },
     { title: 'Repair & Parts', price: 'Custom Quote', desc: 'Contact us for an exact diagnostic and parts replacement quote.' },
   ];
 

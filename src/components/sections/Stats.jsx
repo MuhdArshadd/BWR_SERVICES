@@ -58,14 +58,14 @@ const Stats = () => {
   ];
 
   const companies = [
-    "COMPANY ONE", "TECH CORP", "BUILDERS INC", "MEGA MALL", "KL HOLDINGS", "APEX RETAIL"
+    "TEDOH MANAGEMENT SDN BHD"
   ];
 
   return (
     <section className="pt-8 pb-4 bg-white overflow-hidden relative z-20">
       
       {/* --- Part 1: Trusted By (Marquee) --- */}
-      <div className="max-w-7xl mx-auto px-4 mb-10 text-center">
+      <div className="max-w-7xl mx-auto px-4 text-center">
         
         <div className="inline-block mb-6">
           <h3 className="text-sm md:text-lg font-bold tracking-wide [text-shadow:_2px_2px_5px_rgba(0,0,0,0.1)]">
@@ -73,7 +73,7 @@ const Stats = () => {
           </h3>
         </div>
 
-        <div className="relative flex overflow-hidden w-full [mask-image:_linear-gradient(to_right,transparent_0,_black_50px,_black_calc(100%-50px),transparent_100%)] md:[mask-image:_linear-gradient(to_right,transparent_0,_black_100px,_black_calc(100%-100px),transparent_100%)]">
+        {/* <div className="relative flex overflow-hidden w-full [mask-image:_linear-gradient(to_right,transparent_0,_black_50px,_black_calc(100%-50px),transparent_100%)] md:[mask-image:_linear-gradient(to_right,transparent_0,_black_100px,_black_calc(100%-100px),transparent_100%)]">
           <div className="flex animate-marquee whitespace-nowrap opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
             {companies.map((company, idx) => (
               <span key={idx} className="text-lg md:text-2xl font-black text-base-dark mx-8 md:mx-12">
@@ -88,7 +88,7 @@ const Stats = () => {
               </span>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* --- Part 2: Animated Stats --- */}

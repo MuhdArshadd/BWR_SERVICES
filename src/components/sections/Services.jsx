@@ -3,7 +3,7 @@ import { GeneralService, ChemicalWash, DiagnosisRepair, InstallationIcon } from 
 
 const serviceData = [
   { id: 1, title: 'General Service', desc: 'Routine cleaning for optimal airflow and cooling efficiency.', icon: <GeneralService className="w-6 h-6 md:w-8 md:h-8" /> },
-  { id: 2, title: 'Chemical Wash', desc: 'Deep cleaning to remove stubborn dirt, mold, and odors.', icon: <ChemicalWash className="w-6 h-6 md:w-8 md:h-8" /> },
+  { id: 2, title: 'Chemical Service', desc: 'Deep cleaning to remove stubborn dirt, mold, and odors.', icon: <ChemicalWash className="w-6 h-6 md:w-8 md:h-8" /> },
   { id: 3, title: 'Diagnosis & Repair', desc: 'Fixing water leaks, strange noises, and faulty boards.', icon: <DiagnosisRepair className="w-6 h-6 md:w-8 md:h-8" /> },
   { id: 4, title: 'New Installation', desc: 'Professional mounting and secure piping for brand new units.', icon: <InstallationIcon className="w-6 h-6 md:w-8 md:h-8" /> },
 ];
