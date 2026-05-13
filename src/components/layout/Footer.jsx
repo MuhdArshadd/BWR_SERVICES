@@ -43,8 +43,9 @@ const Footer = () => {
         <div id="contact">
           <h4 className="text-lg font-bold mb-4 text-structure">Contact Us</h4>
           <p className="text-structure/80 mb-2"><strong>Phone:</strong> +60 18-212 2817</p>
-          <p className="text-structure/80 mb-2"><strong>Email:</strong> hello@bwrservices.com</p>
-          <p className="text-structure/80"><strong>Hours:</strong> Mon - Sunday (9am - 6pm)</p>
+          <p className="text-structure/80 mb-2"><strong>Email:</strong> bwrservices03@gmail.com</p>
+          <p className="text-structure/80 mb-2"><strong>Hours:</strong> Monday - Sunday (9am - 6pm)</p>
+          <p className="text-structure/80 mb-2"><strong>Business Address:</strong> B-41-13A Sky Awani 3 Residence Setapak</p>
         </div>
 
       </div>
