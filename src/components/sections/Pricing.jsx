@@ -68,7 +68,7 @@ const Pricing = () => {
                   
                   {/* Click to expand hint */}
                   {tier.hasDetails && (
-                    <div className="mt-4 flex items-center gap-2 text-brand font-bold text-sm uppercase tracking-widest">
+                    <div className="mt-4 flex items-center gap-2 text-accent font-bold text-sm uppercase tracking-widest">
                       {expandedTier === tier.id ? 'Close Details' : 'View HP Breakdown'}
                       <svg className={`w-4 h-4 transition-transform duration-300 ${expandedTier === tier.id ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
